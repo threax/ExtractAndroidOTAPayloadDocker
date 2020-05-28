@@ -13,3 +13,5 @@ RUN apt-get install unzip -y
 RUN apt-get install git -y
 RUN git clone https://github.com/cyxx/extract_android_ota_payload.git /extractor
 RUN pip3 install -r /extractor/requirements.txt
+
+WORKDIR /ota
